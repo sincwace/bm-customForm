@@ -1,0 +1,16 @@
+$border-gray: 1px solid #eee;
+$primary-color: #409eff;
+$warning-color: #e6a23c;
+$error-color: #f56c6c;
+
+$mf-item-height: 80px;
+
+@mixin display-flex($rc: row, $wrap: nowrap, $j: center, $a: center) {
+  display: flex;
+  flex-flow: $rc $wrap;
+  justify-content: $j;
+  align-items: $a;
+}
+
+
+

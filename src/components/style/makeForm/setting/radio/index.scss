@@ -1,0 +1,22 @@
+.tpf-mf-setting-radio {
+  &--radio {
+    width: 100%;
+    &--delete {
+      cursor: pointer;
+      color: $error-color;
+    }
+    &--default-text {
+      margin-left: 20px;
+      color: $primary-color;
+    }
+  }
+
+  &--add {
+    width: 100%;
+    @include display-flex(row, nowrap, space-between, center);
+    &--form {
+      flex-grow: 1;
+      @include display-flex(row, nowrap, space-between, center);
+    }
+  }
+}

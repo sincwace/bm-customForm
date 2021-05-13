@@ -1,0 +1,24 @@
+.tpf-mf-setting-checkbox {
+  &--checkbox {
+    width: 100%;
+    font-size: 14px;
+    &--delete {
+      cursor: pointer;
+      color: $error-color;
+      margin-left: 20px;
+    }
+    &--default-text {
+      margin-left: 20px;
+      color: $primary-color;
+    }
+  }
+
+  &--add {
+    width: 100%;
+    @include display-flex(row, nowrap, space-between, center);
+    &--form {
+      flex-grow: 1;
+      @include display-flex(row, nowrap, space-between, center);
+    }
+  }
+}
