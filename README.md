@@ -2,12 +2,14 @@
 
 用于本末项目的自定义表单设计组件, 该组件依赖element-ui、axios、vue-json-viewer、vuedraggable、lodash、less以及sass, 可以实现表单的自定义设计
 
-原插件 tpForm 地址[click this](//underline.gitee.io/tp-form)
+此插件参考了 underline 的 tpForm项目, 并对渲染组件和一部分设计组件业务进行修改以适应于本末公司前端业务需求
+
+原插件 tpForm 地址[click this](//gitee.com/underline/tp-form)
 
 # 安装
 
 ```shell
-npm install bm-customform-design -s
+npm install bm-customform-draw bm-customform-design -s
 ```
 
 ```javascript
