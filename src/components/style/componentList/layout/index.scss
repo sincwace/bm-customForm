@@ -1,0 +1,17 @@
+.tpf-mf-layout {
+  &--row {
+    &--tip {
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  &--col {
+    &__make {
+      height: 80px;
+      // height: 100%;
+      border: 1px dashed #ccc;
+      box-sizing: border-box;
+    }
+  }
+}

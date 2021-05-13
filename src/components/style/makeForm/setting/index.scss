@@ -1,0 +1,33 @@
+.tpf-mf-layout--right {
+  .el-tabs__nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+    .el-tabs__item {
+      padding: 0;
+      box-sizing: border-box;
+      &.is-active {
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+
+    .el-tabs__active-bar {
+      display: none;
+    }
+  }
+
+  .el-tabs__content {  
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  &--form-setting {
+    .el-form-item {
+      // display: flex;
+      // flex-flow: row nowrap;
+    }
+  }
+}

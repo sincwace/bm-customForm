@@ -1,0 +1,43 @@
+.tpf-mf-layout--items {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  &--panel {
+    box-sizing: border-box;
+    padding: 10px 15px;
+    padding-right: 0;
+    margin-top: 20px;
+    width: 100%;
+
+    &--label {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &--list {
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      
+      &--li {
+        width: 100px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        border: $border-gray;
+        @include display-flex(row, nowrap, center, center);
+        font-size: 14px;
+        cursor: move;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, .03);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,491 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; // 继承父元素的
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    height: 100%;
+    font-family: Microsoft YaHei, Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+#app {
+    height: 100%;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+pre {
+    white-space: pre;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-y {
+    overflow-y: auto;
+}
+
+.text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #a5a0a0;
+    min-height: 10px;
+}
+
+// padding
+.pdl10 {
+    padding-left: 10px !important;
+}
+
+.pdl0 {
+    padding-left: 0px !important;
+}
+
+.pdl30 {
+    padding-left: 30px !important;
+}
+
+.pdl40 {
+    padding-left: 40px !important;
+}
+
+.pdr5 {
+    padding-right: 5px !important;
+}
+
+.pdr10 {
+    padding-right: 10px !important;
+}
+
+.pdb5 {
+    padding-bottom: 5px !important;
+}
+
+.pdb10 {
+    padding-bottom: 10px !important;
+}
+
+.pdt10 {
+    padding-top: 10px !important;
+}
+
+.pdr20 {
+    padding-right: 20px !important;
+}
+
+.pdl20 {
+    padding-left: 20px !important;
+}
+
+.pdt0 {
+    padding-top: 0 !important;
+}
+
+// margin
+.mt5 {
+    margin-top: 5px;
+}
+
+.ml4 {
+    margin-left: 4px;
+}
+
+.mr4 {
+    margin-right: 4px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.tc {
+    text-align: center;
+    .cell {
+        text-align: center;
+    }
+}
+
+.firstTableSerial {
+    .cell {
+        padding: 0 5px;
+        text-align: center;
+    }
+}
+
+.tableSerial {
+    .cell {
+        padding: 0 5px;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// 公用接口loading
+.interfaceLoading {
+    z-index: 3000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgba(102, 102, 102, 0.7);
+    border-radius: 5px;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    .el-loading-mask {
+        background-color: transparent;
+        .path {
+            stroke: white;
+        }
+    }
+}
+
+.resetCollapse {
+    .el-collapse-item__header {
+        font-family: 'Arial Normal', 'Arial';
+        font-weight: 700;
+        font-style: normal;
+        background: #f2f2f2;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.xbox {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.xbox-1-1 {
+    width: 100%;
+}
+
+.xbox-1-2 {
+    width: 50%;
+}
+
+.xbox-1-3 {
+    width: 33.3328%;
+}
+
+.xbox-2-3 {
+    width: 66.6659%;
+}
+
+.xbox-1-4 {
+    width: 24.9690%;
+}
+
+.xbox-3-4 {
+    width: 74.9690%;
+}
+
+.xbox-1-5 {
+    width: 19.9690%;
+}
+
+.xbox-2-5 {
+    width: 39.9690%;
+}
+
+.xbox-3-5 {
+    width: 59.9690%;
+}
+
+.xbox-4-5 {
+    width: 79.9690%;
+}
+
+.xbox-1-6 {
+    width: 16.6357%;
+}
+
+.xbox-5-6 {
+    width: 83.3023%;
+}
+
+.xbox-1-7 {
+    width: 14.2709%;
+}
+
+.xbox-3-7 {
+    width: 42.8127%;
+}
+
+.xbox-2-7 {
+    width: 28.5418%;
+}
+
+.xbox-4-7 {
+    width: 57.0836%;
+}
+
+.xbox-1-8 {
+    width: 12.4909%;
+}
+
+.xbox-7-8 {
+    width: 87.4363%;
+}
+
+.xbox-3-8 {
+    width: 37.4727%;
+}
+
+.xbox-1-10 {
+    width: 10%;
+}
+
+.xbox-4-10 {
+    width: 40%;
+}
+
+.xbox-9-10 {
+    width: 90%;
+}
+
+.xbox-3-10 {
+    width: 30%;
+}
+
+.xbox-7-10 {
+    width: 70%;
+}
+
+.xbox-6-10 {
+    width: 60%;
+}
+
+.xbox-1-1 .xbox-1-2 .xbox-1-3 .xbox-1-4 .xbox-1-5 .xbox-1-6 .xbox-2-3 .xbox-3-4 .xbox-2-5 .xbox-5-6 .xbox-3-5 .xbox-4-5 .xbox-1-8 .xbox-1-10 .xbox-9-10 {
+    box-sizing: border-box;
+}
+
+/*公共颜色*/
+
+.col_black {
+    color: #333;
+}
+
+.col_white {
+    color: #fff;
+}
+
+.col_red {
+    color: #ff6699;
+}
+
+.col_green {
+    color: rgb(0, 128, 0);
+}
+
+.col_blue {
+    color: #409EFF;
+}
+
+.col_gray {
+    color: rgb(169, 169, 169);
+}
+
+.col_orange {
+    color: #f25b33;
+}
+
+.col_skyblue {
+    color: #5bdee8;
+}
+
+.bdrw {
+    border-right: 1px solid white;
+}
+
+.biddingWorkBody {
+    height: calc(~'100% - 60px');
+    overflow: auto;
+    .el-collapse {
+        border-bottom: none;
+    }
+    .el-collapse-item__wrap {
+        border-bottom: none;
+    }
+}
+
+.biddingWorkBody::-webkit-scrollbar {
+    display: none;
+}
+
+.empty {
+    color: #909399;
+    padding: 0 20px;
+}
+
+.cusp {
+    cursor: pointer;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}

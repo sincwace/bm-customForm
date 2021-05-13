@@ -1,0 +1,73 @@
+.tpf-mf-item {
+  position: relative;
+  width: 100%;
+  min-height: $mf-item-height;
+  box-sizing: border-box;
+  padding: 3px 10px;
+  @include display-flex(column, nowrap, center, center);
+  border: 1px solid transparent;
+  &:hover {
+    border-color: $primary-color;
+    .tpf-mf-item--op--delete, .tpf-mf-item--op--copy {
+      visibility: visible;
+    }
+  }
+  &__active {
+    border-color: $warning-color;
+    .tpf-mf-item--op--delete, .tpf-mf-item--op--copy {
+      visibility: visible;
+      background-color: $warning-color;
+    }
+    &:hover {
+      border-color: $warning-color;
+    }
+  }
+  &--mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 888;
+  }
+  &--op {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  
+    &--delete, &--copy {
+      visibility: hidden;
+      padding: 4px 8px;
+      background-color: $primary-color;
+      margin-left: 1px;
+      cursor: pointer;
+      i {
+        color: white;
+      }
+    }
+  }
+
+  & .required {
+    .el-form-item__label::before{
+      content: '*';
+      color: $error-color;
+      margin-right: 4px;
+    }
+  }
+}
+
+// .tpf-sf-tp-form {
+//   & .required {
+//     .el-form-item__label::before{
+//       content: '*';
+//       color: $error-color;
+//       margin-right: 4px;
+//     }
+//   }
+// }
