@@ -29,5 +29,3 @@ Vue.use(bmCustomFormDesign)
 
 # 演示地址
 [click this](//1.117.79.182:8082/)
-
-123
